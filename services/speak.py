@@ -26,5 +26,8 @@ def prompt(options):
         for index, option in enumerate(options):
             print('  (' + str(index) + ") : " + option)
         playerInput = input("")
+        if playerDecision == 'q':
+            print("quitting game...")
+            quit()
         print("")
     return playerInput
