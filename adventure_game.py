@@ -47,9 +47,6 @@ def play_game():
         elif 'prompt' in script:
             while next_scene is None:
                 playerDecision = speak.prompt(script['prompt']['options'])
-                if playerDecision == 'q':
-                    print("exiting game...")
-                    exit()
                 try:
                     playerDecision = int(playerDecision)
                     next_scene = script["prompt"]['next_scene'][playerDecision]
