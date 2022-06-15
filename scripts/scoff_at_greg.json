@@ -1,0 +1,45 @@
+{
+  "dialogue": [
+    {
+      "name": "",
+      "dialogue": [
+        "Who is this fool?",
+        "You scoff at greg's absurd personality"
+      ]
+    },
+    {
+      "name": "Greg",
+      "dialogue": [
+        "you dare to scoff at my Magesty?!!"
+      ]
+    },
+    {
+      "name": "",
+      "dialogue": [
+        "ooh, how scary. Greg appears to be very angry"
+      ]
+    },
+    {
+      "name": "Greg",
+      "dialogue": [
+        "you shall regret this arrogance in your next life!"
+      ]
+    },
+    {
+      "name": "",
+      "dialogue": [
+        "Greg makes a move to attack..."
+      ]
+    }
+  ],
+  "prompt": {
+    "options": [
+      "fight greg",
+      "run away"
+    ],
+    "next_scene": [
+      "fight_greg_barehanded",
+      "run_away"
+    ]
+  }
+}

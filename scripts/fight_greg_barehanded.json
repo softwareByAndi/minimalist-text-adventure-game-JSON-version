@@ -1,0 +1,14 @@
+{
+  "dialogue": [
+    {
+      "name": "",
+      "dialogue": [
+        "You move to intercept Greg's attack, but he's too strong!",
+        "Greg tears you apart and bathes in your blood...",
+        "",
+        "you are dead."
+      ]
+    }
+  ],
+  "next_scene": "GAME_OVER"
+}
