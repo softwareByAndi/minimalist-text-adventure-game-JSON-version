@@ -16,6 +16,7 @@ this program is the JSON version
 
 import json
 import importlib
+import random
 import event
 from services import speak
 from gameData import globals
@@ -65,7 +66,28 @@ def play_game():
 
 
 while not globals.game_over:
-    print("")
+    speak.narrate(random.choice([
+        ["Greetings traveler.", "Your adventure awaits you!"],
+        ["Get ready!", "Get set!", "Adventure!"],
+        [
+            "By playing this game, you accept all responsibility for any "
+            "harm that may occur during or as a result of this game,",
+            "and you agree to not hold 'softwareByAndi' or any related "
+            "parties responsible,",
+            "neither will you pursue any legal action against any party "
+            "related to the production of this game."
+        ],
+        ["Don't forget your wallet...", "Or your Adventurer spirit!"],
+        [
+            "Booting Reality...",
+            "",
+            "~Error...",
+            "~~Error...",
+            "~~~Err~E~rro~rr~~or...",
+            "",
+            "Reality does not exist!"
+        ]
+    ]))
     play_game()
     playerDecision = speak.prompt(['play again', 'quit'])
     if playerDecision == '0':
